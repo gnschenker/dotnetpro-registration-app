@@ -1,0 +1,6 @@
+= Optimaler Docker Arbeitsablauf für Entwickler von .NET Core Microservices
+
+== DotNet Pro - Beispielanwendung
+Gabriel Schenker
+
+Dieses GitHub Repository enthält den Code zum Artikel. Es handelt sich um eine Beispielanwendung, die eine Web basierte Registrierung für Lehrgänge an verschiedenen Universitäten simuliert.

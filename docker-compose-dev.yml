@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+  api:
+    image: acme.com/applications:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    command: dotnet watch -p unittests test
+    volumes:
+      - ./applications-api:/app/applications-api
+      - ./unittests:/app/unittests 

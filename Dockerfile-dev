@@ -1,0 +1,8 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+WORKDIR /app
+COPY ${PWD}/applications-api/applications-api.csproj ./applications-api/
+COPY ${PWD}/unittests/unittests.csproj ./unittests/
+RUN dotnet restore unittests
+COPY ${PWD}/applications-api ./applications-api
+COPY ${PWD}/unittests ./unittests
+CMD dotnet test unittests
