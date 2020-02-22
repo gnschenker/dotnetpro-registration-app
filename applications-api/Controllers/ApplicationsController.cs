@@ -7,7 +7,7 @@ using Applications.Handlers;
 
 namespace Applications.Controllers
 {
-    [ApiController]
+  [ApiController]
     [Route("[controller]")]
     public class ApplicationsController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace Applications.Controllers
             this.mediator = mediator;
         }
 
-        [HttpGet("{applicationId")]
+        [HttpGet("{applicationId}")]
         public async Task<Application> Get(Guid applicationId)
         {
             var application = await mediator.Send<Application>(new GetApplication(applicationId));
