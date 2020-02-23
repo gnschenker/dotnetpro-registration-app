@@ -19,6 +19,8 @@ services:
     build:
       context: .
       dockerfile: OutsideInTests/Dockerfile
+    environment: 
+      API_HOST: api
     depends_on:
       api:
         condition: service_healthy

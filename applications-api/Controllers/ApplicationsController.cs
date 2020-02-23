@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using Applications.Model;
 using Applications.Handlers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Applications.Controllers
 {
-  [ApiController]
+    [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class ApplicationsController : ControllerBase
     {
         private readonly IMediator mediator;
