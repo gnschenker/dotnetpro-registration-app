@@ -1,0 +1,17 @@
+{
+  "name": "outsideintests-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "watch": "nodemon -L --watch spec --exec jasmine"
+  },
+  "author": "Gabriel Schenker",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jasmine": "^3.5.0",
+    "uuid": "^3.4.0"
+  }
+}

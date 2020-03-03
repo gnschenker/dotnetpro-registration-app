@@ -21,6 +21,8 @@ services:
       dockerfile: OutsideInTests/Dockerfile
     environment: 
       API_HOST: api
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
     depends_on:
       api:
         condition: service_healthy
